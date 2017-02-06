@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">GRP-1</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">136,2 seconds</td><td class="numi">1 </td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">GRP-1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">NewTest.TestNGPrg</td><td><a href="#m1"><b>capitalLetters</b> (1) ("Enter capital letters")</a></td><td class="numi">1</td><td>1486390389794</td><td class="numi">5234</td></tr>
+<tr class="failedeven"><td rowspan="1">NewTest.PageFactoryTest</td><td><a href="#m2"><b>exapmlePF</b> (1) </a></td><td class="numi">1</td><td>1486390418348</td><td class="numi">5370</td></tr>
+<tr class="failedodd"><td rowspan="2">NewTest.HandleFrameAlerts</td><td><a href="#m3"><b>handleAlerts</b> (1) </a></td><td class="numi">1</td><td>1486390424045</td><td class="numi">61</td></tr><tr class="failedodd"><td><a href="#m4"><b>handleFrames</b> (1) </a></td><td class="numi">1</td><td>1486390424110</td><td class="numi">12</td></tr>
+<tr class="failedeven"><td rowspan="1">NewTest.MouseInteractions</td><td><a href="#m5"><b>dragDrop</b> (1) </a></td><td class="numi">1</td><td>1486390424124</td><td class="numi">14731</td></tr>
+<tr class="failedodd"><td rowspan="1">NewTest.JunitTest</td><td><a href="#m6"><b>handleFrames</b> (1) </a></td><td class="numi">1</td><td>1486390449766</td><td class="numi">57</td></tr>
+<tr><th colspan="4">GRP-1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">NewTest.NewTest</td><td><a href="#m7"><b>testEasy</b> (1) </a></td><td class="numi">1</td><td>1486390313667</td><td class="numi">28798</td></tr>
+<tr class="passedeven"><td rowspan="2">NewTest.KeyboardInteractions</td><td><a href="#m8"><b>capitalLetters</b> (1) </a></td><td class="numi">1</td><td>1486390342467</td><td class="numi">16067</td></tr><tr class="passedeven"><td><a href="#m9"><b>keyboardActs</b> (1) </a></td><td class="numi">1</td><td>1486390358536</td><td class="numi">31256</td></tr>
+<tr class="passedodd"><td rowspan="2">NewTest.TestNGPrg</td><td><a href="#m10"><b>keyboardActs</b> (1) ("select, cut, paste,redo,undo")</a></td><td class="numi">1</td><td>1486390395029</td><td class="numi">12795</td></tr><tr class="passedodd"><td><a href="#m11"><b>mouseOverMoveAct</b> (1) ("Open submenu")</a></td><td class="numi">1</td><td>1486390407826</td><td class="numi">10520</td></tr>
+<tr class="passedeven"><td rowspan="1">NewTest.ScreenShot</td><td><a href="#m12"><b>test</b> (1) </a></td><td class="numi">1</td><td>1486390423720</td><td class="numi">324</td></tr>
+<tr class="passedodd"><td rowspan="1">NewTest.MouseInteractions</td><td><a href="#m13"><b>mouseOverMoveAct</b> (1) </a></td><td class="numi">1</td><td>1486390438856</td><td class="numi">10909</td></tr>
+</table>
+<h1>GRP-1</h1>
+<h2 id="m1">NewTest.TestNGPrg:capitalLetters</h2>
+<div style="padding-left:3em">
+<p>Loan Amount field does not contain string entry.&apos;Enter only integer value&apos; message can be added expected [false] but found [true]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertFalse(Assert.java:63)
+<br/>at NewTest.TestNGPrg.capitalLetters(TestNGPrg.java:96)
+<br/>13 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">NewTest.HandleFrameAlerts:handleFrames</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;iframeResult&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.0&apos;, revision: &apos;0e4837e94b1fad0db93e88cd972ed3e235a22892&apos;, time: &apos;2015-07-29 15:58:41&apos;
+System info: host: &apos;AND0026&apos;, ip: &apos;10.100.132.123&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\selens\AppData\Local\Temp\scoped_dir17484_24562}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49f82c73833959239d72d58aa0595555
+*** Element info: {Using=id, value=iframeResult}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+<br/>at NewTest.HandleFrameAlerts.handleFrames(HandleFrameAlerts.java:46)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">NewTest.HandleFrameAlerts:handleAlerts</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;iframeResult&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.0&apos;, revision: &apos;0e4837e94b1fad0db93e88cd972ed3e235a22892&apos;, time: &apos;2015-07-29 15:58:41&apos;
+System info: host: &apos;AND0026&apos;, ip: &apos;10.100.132.123&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\selens\AppData\Local\Temp\scoped_dir17484_24562}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49f82c73833959239d72d58aa0595555
+*** Element info: {Using=id, value=iframeResult}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+<br/>at NewTest.HandleFrameAlerts.handleAlerts(HandleFrameAlerts.java:53)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">NewTest.PageFactoryTest:exapmlePF</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at org.testng.Assert.assertEquals(Assert.java:296)
+<br/>at NewTest.PageFactoryTest.exapmlePF(PageFactoryTest.java:29)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">NewTest.JunitTest:handleFrames</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;iframeResult&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.0&apos;, revision: &apos;0e4837e94b1fad0db93e88cd972ed3e235a22892&apos;, time: &apos;2015-07-29 15:58:41&apos;
+System info: host: &apos;AND0026&apos;, ip: &apos;10.100.132.123&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\selens\AppData\Local\Temp\scoped_dir17024_18019}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: bba8dcd02a7d984669823108b0ddd530
+*** Element info: {Using=id, value=iframeResult}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:389)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+<br/>at NewTest.JunitTest.handleFrames(JunitTest.java:44)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">NewTest.MouseInteractions:dragDrop</h2>
+<div style="padding-left:3em">
+<p>expected [false] but found [true]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertFalse(Assert.java:63)
+<br/>at org.testng.Assert.assertFalse(Assert.java:73)
+<br/>at NewTest.MouseInteractions.dragDrop(MouseInteractions.java:56)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">NewTest.MouseInteractions:mouseOverMoveAct</h2>
+<div style="padding-left:3em">
+mouseOverMoveAct<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">NewTest.ScreenShot:test</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">NewTest.KeyboardInteractions:capitalLetters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">NewTest.TestNGPrg:keyboardActs</h2>
+<div style="padding-left:3em">
+keyboardActs<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">NewTest.NewTest:testEasy</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">NewTest.KeyboardInteractions:keyboardActs</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">NewTest.TestNGPrg:mouseOverMoveAct</h2>
+<div style="padding-left:3em">
+mouseOverMoveAct<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

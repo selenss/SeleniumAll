@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestJenkins by groups]">
+  <test name="GRP-1(failed)">
+    <groups>
+      <run>
+        <include name="1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="NewTest.PageFactoryTest">
+        <methods>
+          <include name="exapmlePF"/>
+        </methods>
+      </class> <!-- NewTest.PageFactoryTest -->
+      <class name="NewTest.HandleFrameAlerts">
+        <methods>
+          <include name="handleAlerts"/>
+          <include name="handleFrames"/>
+        </methods>
+      </class> <!-- NewTest.HandleFrameAlerts -->
+      <class name="NewTest.JunitTest">
+        <methods>
+          <include name="handleFrames"/>
+        </methods>
+      </class> <!-- NewTest.JunitTest -->
+      <class name="NewTest.MouseInteractions">
+        <methods>
+          <include name="dragDrop"/>
+        </methods>
+      </class> <!-- NewTest.MouseInteractions -->
+      <class name="NewTest.TestNGPrg">
+        <methods>
+          <include name="afterAllTestCases"/>
+          <include name="beforeAllTestCases"/>
+          <include name="capitalLetters"/>
+        </methods>
+      </class> <!-- NewTest.TestNGPrg -->
+    </classes>
+  </test> <!-- GRP-1(failed) -->
+</suite> <!-- Failed suite [TestJenkins by groups] -->
